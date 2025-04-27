@@ -14,3 +14,4 @@ D:\C#GreatProjects\ToDoList\ToDoList\obj\Debug\net9.0-windows\refint\ToDoList.dl
 D:\C#GreatProjects\ToDoList\ToDoList\obj\Debug\net9.0-windows\ToDoList.pdb
 D:\C#GreatProjects\ToDoList\ToDoList\obj\Debug\net9.0-windows\ToDoList.genruntimeconfig.cache
 D:\C#GreatProjects\ToDoList\ToDoList\obj\Debug\net9.0-windows\ref\ToDoList.dll
+D:\C#GreatProjects\ToDoList\ToDoList\obj\Debug\net9.0-windows\ToDoList.sourcelink.json

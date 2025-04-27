@@ -34,7 +34,8 @@
             Monthly = new Button();
             AddButton = new Button();
             ClearButton = new Button();
-            
+            DeleteButton = new Button();
+            SuspendLayout();
             // 
             // checkedListBox1
             // 
@@ -47,7 +48,8 @@
             checkedListBox1.TabIndex = 0;
             checkedListBox1.ThreeDCheckBoxes = true;
             checkedListBox1.UseWaitCursor = true;
-            checkedListBox1.SelectedIndexChanged += checkedListBox1_SelectedIndexChanged;
+            this.checkedListBox1.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.CheckedListBox1_ItemCheck);
+
             // 
             // Daily
             // 
@@ -105,11 +107,23 @@
             ClearButton.UseVisualStyleBackColor = false;
             ClearButton.Click += ClearButton_Click;
             // 
+            // DeleteButton
+            // 
+            DeleteButton.BackColor = Color.IndianRed;
+            DeleteButton.Location = new Point(242, 399);
+            DeleteButton.Name = "DeleteButton";
+            DeleteButton.Size = new Size(63, 39);
+            DeleteButton.TabIndex = 3;
+            DeleteButton.Text = "Delete";
+            DeleteButton.UseVisualStyleBackColor = false;
+            DeleteButton.Click += DeleteButton_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(DeleteButton);
             Controls.Add(ClearButton);
             Controls.Add(AddButton);
             Controls.Add(Monthly);
@@ -129,5 +143,6 @@
         private Button Monthly;
         private Button AddButton;
         private Button ClearButton;
+        private Button DeleteButton;
     }
 }
