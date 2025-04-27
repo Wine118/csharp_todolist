@@ -1,0 +1,16 @@
+D:\C#GreatProjects\ToDoList\ToDoList\bin\Debug\net9.0-windows\ToDoList.exe
+D:\C#GreatProjects\ToDoList\ToDoList\bin\Debug\net9.0-windows\ToDoList.deps.json
+D:\C#GreatProjects\ToDoList\ToDoList\bin\Debug\net9.0-windows\ToDoList.runtimeconfig.json
+D:\C#GreatProjects\ToDoList\ToDoList\bin\Debug\net9.0-windows\ToDoList.dll
+D:\C#GreatProjects\ToDoList\ToDoList\bin\Debug\net9.0-windows\ToDoList.pdb
+D:\C#GreatProjects\ToDoList\ToDoList\obj\Debug\net9.0-windows\ToDoList.Form1.resources
+D:\C#GreatProjects\ToDoList\ToDoList\obj\Debug\net9.0-windows\ToDoList.csproj.GenerateResource.cache
+D:\C#GreatProjects\ToDoList\ToDoList\obj\Debug\net9.0-windows\ToDoList.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#GreatProjects\ToDoList\ToDoList\obj\Debug\net9.0-windows\ToDoList.AssemblyInfoInputs.cache
+D:\C#GreatProjects\ToDoList\ToDoList\obj\Debug\net9.0-windows\ToDoList.AssemblyInfo.cs
+D:\C#GreatProjects\ToDoList\ToDoList\obj\Debug\net9.0-windows\ToDoList.csproj.CoreCompileInputs.cache
+D:\C#GreatProjects\ToDoList\ToDoList\obj\Debug\net9.0-windows\ToDoList.dll
+D:\C#GreatProjects\ToDoList\ToDoList\obj\Debug\net9.0-windows\refint\ToDoList.dll
+D:\C#GreatProjects\ToDoList\ToDoList\obj\Debug\net9.0-windows\ToDoList.pdb
+D:\C#GreatProjects\ToDoList\ToDoList\obj\Debug\net9.0-windows\ToDoList.genruntimeconfig.cache
+D:\C#GreatProjects\ToDoList\ToDoList\obj\Debug\net9.0-windows\ref\ToDoList.dll
