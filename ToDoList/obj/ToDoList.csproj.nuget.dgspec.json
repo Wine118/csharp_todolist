@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#GreatProjects\\ToDoList\\ToDoList\\ToDoList.csproj": {}
+    "D:\\C#GreatProjects\\ToDoList - SQL\\ToDoList\\ToDoList.csproj": {}
   },
   "projects": {
-    "D:\\C#GreatProjects\\ToDoList\\ToDoList\\ToDoList.csproj": {
+    "D:\\C#GreatProjects\\ToDoList - SQL\\ToDoList\\ToDoList.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#GreatProjects\\ToDoList\\ToDoList\\ToDoList.csproj",
+        "projectUniqueName": "D:\\C#GreatProjects\\ToDoList - SQL\\ToDoList\\ToDoList.csproj",
         "projectName": "ToDoList",
-        "projectPath": "D:\\C#GreatProjects\\ToDoList\\ToDoList\\ToDoList.csproj",
+        "projectPath": "D:\\C#GreatProjects\\ToDoList - SQL\\ToDoList\\ToDoList.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\C#GreatProjects\\ToDoList\\ToDoList\\obj\\",
+        "outputPath": "D:\\C#GreatProjects\\ToDoList - SQL\\ToDoList\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,12 @@
       "frameworks": {
         "net9.0-windows7.0": {
           "targetAlias": "net9.0-windows",
+          "dependencies": {
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.119, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\C#GreatProjects\\ToDoList\\",
+  "WorkspaceRootPath": "D:\\C#GreatProjects\\ToDoList - SQL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{06150066-AB16-49AA-BF35-0F734ACC499C}|ToDoList\\ToDoList.csproj|d:\\c#greatprojects\\todolist\\todolist\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{06150066-AB16-49AA-BF35-0F734ACC499C}|ToDoList\\ToDoList.csproj|d:\\c#greatprojects\\todolist - sql\\todolist\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{06150066-AB16-49AA-BF35-0F734ACC499C}|ToDoList\\ToDoList.csproj|solutionrelative:todolist\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{06150066-AB16-49AA-BF35-0F734ACC499C}|ToDoList\\ToDoList.csproj|D:\\C#GreatProjects\\ToDoList\\todolist\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{06150066-AB16-49AA-BF35-0F734ACC499C}|ToDoList\\ToDoList.csproj|solutionrelative:todolist\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{06150066-AB16-49AA-BF35-0F734ACC499C}|ToDoList\\ToDoList.csproj|d:\\c#greatprojects\\todolist - sql\\todolist\\sqlitehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06150066-AB16-49AA-BF35-0F734ACC499C}|ToDoList\\ToDoList.csproj|solutionrelative:todolist\\sqlitehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{06150066-AB16-49AA-BF35-0F734ACC499C}|ToDoList\\ToDoList.csproj|d:\\c#greatprojects\\todolist\\todolist\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06150066-AB16-49AA-BF35-0F734ACC499C}|ToDoList\\ToDoList.csproj|solutionrelative:todolist\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{06150066-AB16-49AA-BF35-0F734ACC499C}|ToDoList\\ToDoList.csproj|d:\\c#greatprojects\\todolist - sql\\todolist\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{06150066-AB16-49AA-BF35-0F734ACC499C}|ToDoList\\ToDoList.csproj|solutionrelative:todolist\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "D:\\C#GreatProjects\\ToDoList\\ToDoList\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "ToDoList\\Form1.Designer.cs",
-              "ToolTip": "D:\\C#GreatProjects\\ToDoList\\ToDoList\\Form1.Designer.cs",
-              "RelativeToolTip": "ToDoList\\Form1.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T08:20:03.719Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\C#GreatProjects\\ToDoList\\ToDoList\\Form1.cs",
+              "DocumentMoniker": "D:\\C#GreatProjects\\ToDoList - SQL\\ToDoList\\Form1.cs",
               "RelativeDocumentMoniker": "ToDoList\\Form1.cs",
-              "ToolTip": "D:\\C#GreatProjects\\ToDoList\\ToDoList\\Form1.cs",
+              "ToolTip": "D:\\C#GreatProjects\\ToDoList - SQL\\ToDoList\\Form1.cs",
               "RelativeToolTip": "ToDoList\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-26T07:44:06.104Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\C#GreatProjects\\ToDoList\\ToDoList\\Form1.cs",
+              "DocumentMoniker": "D:\\C#GreatProjects\\ToDoList - SQL\\ToDoList\\Form1.cs",
               "RelativeDocumentMoniker": "ToDoList\\Form1.cs",
-              "ToolTip": "D:\\C#GreatProjects\\ToDoList\\ToDoList\\Form1.cs [Design]",
+              "ToolTip": "D:\\C#GreatProjects\\ToDoList - SQL\\ToDoList\\Form1.cs [Design]",
               "RelativeToolTip": "ToDoList\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T07:38:17.697Z",
+              "WhenOpened": "2025-05-23T16:30:56.793Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SQLiteHelper.cs",
+              "DocumentMoniker": "D:\\C#GreatProjects\\ToDoList - SQL\\ToDoList\\SQLiteHelper.cs",
+              "RelativeDocumentMoniker": "ToDoList\\SQLiteHelper.cs",
+              "ToolTip": "D:\\C#GreatProjects\\ToDoList - SQL\\ToDoList\\SQLiteHelper.cs",
+              "RelativeToolTip": "ToDoList\\SQLiteHelper.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAYwEsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T12:35:12.281Z",
+              "EditorCaption": ""
             }
           ]
         }

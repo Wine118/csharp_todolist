@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using ToDoList;
+using static ToDoList.Form1;
 
 namespace ToDoList
 {
@@ -24,8 +26,12 @@ namespace ToDoList
 
         public class TodoTask
         {
+            public int Id { get; set; }
             public string Text { get; set; }
             public bool IsChecked { get; set; }
+            public string Mode { get; set; }
+
+
         }
 
         private int taskCount = 0;
@@ -41,6 +47,7 @@ namespace ToDoList
         {
             InitializeComponent();
             InitializeCustomCode();
+            SQLiteHelper.InitializeDatabase();
         }
 
 
@@ -87,104 +94,74 @@ namespace ToDoList
             string newTask = PromptDialog.ShowDialog("Enter your task:", "Add New Task");
             if (!string.IsNullOrWhiteSpace(newTask))
             {
-                TodoTask task = new TodoTask { Text = newTask, IsChecked = false };
-                switch (currentMode)
+                TodoTask task = new TodoTask 
                 {
-                    case TaskMode.Daily:
-                        DailyTasks.Add(task);
-                        break;
-                    case TaskMode.Weekly:
-                        WeeklyTasks.Add(task);
-                        break;
-                    case TaskMode.Monthly:
-                        MonthlyTasks.Add(task);
-                        break;
-                }
+                    Text = newTask,
+                    IsChecked = false,
+                    Mode = currentMode.ToString() // This line sets the mode correctly
+                };
+
+                // Correct usage — pass task.Text and task.IsChecked
+                SQLiteHelper.AddTask(task);
+
                 RefreshTaskList();
             }
-
         }
+
 
         private void CheckedListBox1_ItemCheck(object sender, ItemCheckEventArgs e)
         {
             this.BeginInvoke(new Action(() =>
             {
-                List<TodoTask> currentList = GetCurrentList();
-                if (e.Index >= 0 && e.Index < currentList.Count)
+                var task = new TodoTask
                 {
-                    currentList[e.Index].IsChecked = (checkedListBox1.GetItemChecked(e.Index));
-                }
+                    Text = checkedListBox1.Items[e.Index].ToString(),
+                    IsChecked = e.NewValue == CheckState.Checked,
+                    Mode = currentMode.ToString()
+                };
+
+                SQLiteHelper.UpdateCheckState(task);
             }));
         }
 
         private void RefreshTaskList()
         {
             checkedListBox1.Items.Clear();
+            var tasks = SQLiteHelper.GetTasks(currentMode.ToString());
 
-            List<TodoTask> currentList = GetCurrentList();
 
-            for (int i = 0; i < currentList.Count; i++)
+            foreach (var task in tasks)
             {
-                checkedListBox1.Items.Add($"{i + 1}. {currentList[i].Text}", currentList[i].IsChecked);
+                checkedListBox1.Items.Add(task.Text, task.IsChecked);
             }
         }
 
 
         private void ClearButton_Click(object sender, EventArgs e)
         {
-            switch (currentMode)
-            {
-                case TaskMode.Daily:
-                    DailyTasks.Clear();
-                    break;
-                case TaskMode.Weekly:
-                    WeeklyTasks.Clear();
-                    break;
-                case TaskMode.Monthly:
-                    MonthlyTasks.Clear();
-                    break;
-            }
+            SQLiteHelper.ClearTasks(currentMode.ToString());
             RefreshTaskList();
+
         }
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            // First, collect which indexes are checked
-            List<int> checkedIndexes = new List<int>();
+            List<string> toDelete = new List<string>();
             foreach (int index in checkedListBox1.CheckedIndices)
             {
-                checkedIndexes.Add(index);
+                string fullText = checkedListBox1.Items[index].ToString();
+                string taskText = fullText.Substring(fullText.IndexOf(". ") + 2); // remove numbering
+                toDelete.Add(fullText);
             }
 
-            // Delete from the task list, starting from highest index to avoid shifting issues
-            List<TodoTask> currentList = GetCurrentList();
-
-            switch (currentMode)
-            {
-                case TaskMode.Daily:
-                    currentList = DailyTasks;
-                    break;
-                case TaskMode.Weekly:
-                    currentList = WeeklyTasks;
-                    break;
-                case TaskMode.Monthly:
-                    currentList = MonthlyTasks;
-                    break;
-            }
-
-            // Important: Delete backwards
-            checkedIndexes.Sort();
-            checkedIndexes.Reverse();
-            foreach (int index in checkedIndexes)
-            {
-                if (index >= 0 && index < currentList.Count)
-                {
-                    currentList.RemoveAt(index);
-                }
-            }
-
+            SQLiteHelper.DeleteCheckedTasks(currentMode.ToString(), toDelete);
             RefreshTaskList();
+
         }
+
+
+
+        
     }
 
     public static class PromptDialog

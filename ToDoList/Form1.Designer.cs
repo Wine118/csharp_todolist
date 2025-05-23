@@ -48,8 +48,7 @@
             checkedListBox1.TabIndex = 0;
             checkedListBox1.ThreeDCheckBoxes = true;
             checkedListBox1.UseWaitCursor = true;
-            this.checkedListBox1.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.CheckedListBox1_ItemCheck);
-
+            checkedListBox1.ItemCheck += CheckedListBox1_ItemCheck;
             // 
             // Daily
             // 
@@ -131,7 +130,7 @@
             Controls.Add(Daily);
             Controls.Add(checkedListBox1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "ToDoApp";
             ResumeLayout(false);
         }
 
